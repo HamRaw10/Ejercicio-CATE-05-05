@@ -37,7 +37,7 @@ document.getElementById("formularioDias").addEventListener("submit", function(ev
     };
     const precioDia = precios[destino];
     const totalPrecio = precioDia * dias;
-    document.getElementById("resultadoDias").innerText = `Para estar ${dias} dias en ${destino} se necesitan ${totalPrecio}`
+    document.getElementById("resultadoDias").innerText = `Para estar ${dias} dias en ${destino} se necesitan ${totalPrecio}$`
 
 
 }); 
