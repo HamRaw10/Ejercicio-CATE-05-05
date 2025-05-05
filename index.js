@@ -13,8 +13,14 @@ document.getElementById("formularioDestino").addEventListener("submit", function
     event.preventDefault();
 
     const destino = document.getElementById("pais").value;
-    
+    const ciudades = document.getElementById("ciudades").value;
+
+    if(destino == ciudades){
     document.getElementById("resultadoDestino").innerText =  `¿Cuantos dias desea estar en ${destino}?`;
+    }
+    else{
+        document.getElementById("resultadoDestino").innerText = `Esa ciudad no esta disponible, ingrese otra`
+    }
     document.getElementById("formularioDias").hidden = false;
 
 });
