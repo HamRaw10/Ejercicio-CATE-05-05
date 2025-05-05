@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de nombre</title>
+</head>
+<body>
+  <h1>Bienvenido, vamos a calcular su viaje :)</h1>
+
+  <form id="formulario">
+    <label for="nom">Ingrese su nombre</label>
+    <input type="text" id="nom" name="nom" required>
+    <button type="submit">Enviar</button>
+
+    <h1 id="resultadoNombre"></h1>
+
+</form>
+
+
+<form id="formularioDestino" hidden>
+    <h2>¿Donde desea viajar?</h2>
+    <h3>Los destinos disponibles son: </h3>
+    <ul>
+        <li>Tokyo</li>
+        <li>Cuzco</li>
+        <li>Miami</li>
+        <li>Sofia</li>
+        <li>Berlin</li>
+        <li>Buenos Aires(BsAs)</li>
+        <li>Barcelona</li>
+        <li>Rio De Janeiro(Rio)</li>
+    </ul>
+    <label for="pais">Ingrese el pais al que desea viajar</label>
+    <input type="text" id="pais" name="pais" required>
+    <button type="submit">Enviar</button>
+    <h2 id="resultadoDestino"></h2>
+</form>
+
+    
+
+<form id="formularioDias" hidden>
+    <label for="dias">Ingrese la cantidad de dias que desea estar</label>
+    <input type="number" id="dias" name="dias" required>
+    <button type="submit">Enviar</button>
+    <h2 id="resultadoDias"></h2>
+</form>
+
+    
+  <script src="index.js"></script>
+</body>
+</html>
